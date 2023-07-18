@@ -11,9 +11,7 @@ int main() {
         cin >> x;
         cin >> y;
 
-        int p = x/10;
-        int s = p * y;
-        cout << s << '\n';
+        cout << x-y << '\n';
     }
 	return 0;
 }
