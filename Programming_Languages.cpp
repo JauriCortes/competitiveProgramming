@@ -25,7 +25,6 @@ int main() {
 
         int k = 0;
         int j = 0;
-
         while (k < size && j < size) {
             int m = languages[j][k];
             int* f = std::find(chef, end, m);
