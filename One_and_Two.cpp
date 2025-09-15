@@ -10,6 +10,17 @@ int main() {
     int t; //numero de casos
     cin >> t;
     //itera por cada caso
+    
+    if (t>128) {
+        cout << n << " Es el n para t > 128" << endl;
+        for (int u = 0; u < n; u++) {
+            int elem;
+            cin >> elem;
+
+            cout << elem;
+        }
+    }
+
     for (int i = 0; i < t; i++) {
 
         int n; //numero de elementos
@@ -59,14 +70,14 @@ int main() {
 int comparar_productos(int k, int n, int arrElementos[]) {
     
     //producto del lado izquierdo
-    long long prodIzq = 1;
+    unsigned long long prodIzq = 1;
     for (int izq = 0; izq < k; izq++) {
         //obtener numeros del lado izquierdo
         prodIzq = prodIzq * arrElementos[izq];
     }
     
     //producto del lado derecho
-    long long prodDer = 1;
+    unsigned long long prodDer = 1;
     for (int der = k; der < n; der++) {
         //obtener numeros del lado derecho
         prodDer = prodDer * arrElementos[der];
