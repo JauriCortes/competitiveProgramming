@@ -10,21 +10,32 @@ int main() {
     int t; //numero de casos
     cin >> t;
     //itera por cada caso
+
     
-    if (t>128) {
-        cout << n << " Es el n para t > 128" << endl;
-        for (int u = 0; u < n; u++) {
-            int elem;
-            cin >> elem;
-
-            cout << elem;
-        }
-    }
-
     for (int i = 0; i < t; i++) {
-
+        
         int n; //numero de elementos
         cin >> n;
+
+        if (n>128) {
+
+            cout << n << " Es el n para n > 128" << endl;
+            int arrDeb[n];
+
+            for (int u = 0; u < n; u++) {
+                int elem;
+                cin >> elem;
+    
+                arrDeb[u] = elem;
+            }
+
+            for (int u = 0; u < n; u++) {
+                
+                cout << arrDeb[u] << " ";
+            }
+
+            
+        }
 
         int arrElementos[n];//array para guardar los elementos
 
