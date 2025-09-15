@@ -48,7 +48,8 @@ int main() {
                }
                
                if (final_counter == mitad){
-                    cout << u+1 << endl;
+                    cout << u + 1 << endl;
+                    break;
                }
             }
         }
