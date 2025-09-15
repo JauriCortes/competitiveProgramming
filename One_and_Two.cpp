@@ -59,14 +59,14 @@ int main() {
 int comparar_productos(int k, int n, int arrElementos[]) {
     
     //producto del lado izquierdo
-    int prodIzq = 1;
+    long long prodIzq = 1;
     for (int izq = 0; izq < k; izq++) {
         //obtener numeros del lado izquierdo
         prodIzq = prodIzq * arrElementos[izq];
     }
     
     //producto del lado derecho
-    int prodDer = 1;
+    long long prodDer = 1;
     for (int der = k; der < n; der++) {
         //obtener numeros del lado derecho
         prodDer = prodDer * arrElementos[der];
