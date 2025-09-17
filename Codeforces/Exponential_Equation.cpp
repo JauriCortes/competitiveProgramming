@@ -13,17 +13,26 @@ int main() {
         int n;
         cin >> n;
 
-        bool flag = false;
+        if (n % 2 != 0) {
+
+            cout << -1 << endl;
+        } else {
+
+            cout << n/2 << " " << 1 << endl;
+        }
+
+        /*bool flag = false;
         for (int x = 1; x <= n; x++) {
             for (int y = 1; y <= n; y++) {
 
-                int resultado = (pow(x,y)*y) + (pow(y,x)*x);
+                unsigned long resultado = (pow(x,y)*y) + (pow(y,x)*x);
                 cout << "Resultado = " << resultado << " x: " << x << " y: " << y << endl;
                 
                 if (resultado == n) {
 
                     cout << "Resultado encontrado";
                     flag = true;
+            
                     break;
                 }
             }
@@ -32,6 +41,6 @@ int main() {
             }
         }
 
-        cout << -1 << endl;
+        cout << -1 << endl;*/
     }
 }
